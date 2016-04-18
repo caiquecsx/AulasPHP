@@ -17,12 +17,16 @@
       // echo "<br>".Usuario::$nro_usuarios_online."<br>";
 
       // Herança
-      include_once 'usuarioComum.php';
+      // include_once 'usuarioComum.php';
+      //
+      // $usuario = new UsuarioComum;
+      // $usuario->setUsuario("PET-SI");
+      // echo "<br>".$usuario->getUsuario()."<br>";
+      // echo "Usuarios online:".Usuario::$nro_usuarios_online."<br>";
 
-      $usuario = new UsuarioComum;
-      $usuario->setUsuario("PET-SI");
-      echo "<br>".$usuario->getUsuario()."<br>";
-      echo "Usuarios online:".Usuario::$nro_usuarios_online."<br>";
+      //Conexão com o banco
+      include_once 'conexao.php';
+
     ?>
   </body>
 </html>
